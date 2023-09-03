@@ -8,11 +8,9 @@ document.querySelector('#app').innerHTML = `
       <img src="${ntnuLogo}" class="logo" alt="NTNU logo" />
     </a>
     <h1>Welcome to Computer Graphics 2023!</h1>
-    <!-- 
     <div class="card">
-      <... Add counter button here>
+      <button id="counter" />
     </div>
-    -->
     <p class="read-the-docs">
       Click on the NTNU logo to go to the main page
     </p>
