@@ -1,26 +1,15 @@
-export function generateImage(canvas: any) {
+export function generateImage(canvas) {
   const ctx = canvas.getContext("2d");
 
   let imgWidth = 512
   let imgHeight = 512
 
   // You shoud push your rgba values to this imageDataArray
-  let imageDataArray : number[] = []
+  let imageDataArray = []
 
   let imageData = ctx.createImageData(imgWidth, imgHeight)
 
   // Your code goes here:
-
-  for (let i = 0; i < imgHeight; ++i) {
-      for (let j = 0; j < imgWidth; ++j) {
-          let r = Math.floor(255.999 * j / (imgWidth-1))
-          let g = Math.floor(255.999 * i / (imgHeight-1))
-          let b = Math.floor(255.999 * 0)
-
-          imageDataArray.push(r, g, b, 255)
-
-      }
-  }
 
   for (let i = 0; i < imageData.data.length; i +=4) {
           // Modify pixel data
