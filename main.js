@@ -10,7 +10,7 @@ document.querySelector('#app').innerHTML = `
     <h1>Welcome to Computer Graphics 2023!</h1>
     <!-- 
     <div class="card">
-      <... Add counter here>
+      <... Add counter button here>
     </div>
     -->
     <p class="read-the-docs">
