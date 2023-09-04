@@ -13,9 +13,9 @@ export function generateImage(canvas) {
   for (let i = 0; i < imgHeight; ++i) {
     for (let j = 0; j < imgWidth; ++j) {
 
-      let r = Math.floor(255.999 * j / (imgWidth-1))
-      let g = Math.floor(255.999 * i / (imgHeight-1))
-      let b = Math.floor(255.999 * 0)
+      let r = Math.floor(255 * j / (imgWidth-1))
+      let g = Math.floor(255 * i / (imgHeight-1))
+      let b = Math.floor(255 * 0)
       imageDataArray.push(r, g, b, 255)    
     }
   }
