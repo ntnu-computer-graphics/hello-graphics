@@ -10,6 +10,16 @@ export function generateImage(canvas) {
   let imageData = ctx.createImageData(imgWidth, imgHeight)
 
   // Your code goes here:
+  for (let i = 0; i < imgHeight; ++i) {
+    for (let j = 0; j < imgWidth; ++j) {
+
+      let r = Math.floor(255.999 * j / (imgWidth-1))
+      let g = Math.floor(255.999 * i / (imgHeight-1))
+      let b = Math.floor(255.999 * 0)
+      imageDataArray.push(r, g, b, 255)    
+    }
+  }
+
 
   for (let i = 0; i < imageData.data.length; i +=4) {
           // Modify pixel data

@@ -1,6 +1,7 @@
 import './style.css'
 import ntnuLogo from '/ntnu_eng.png'
 import { setupCounter } from './counter.js'
+import { generateImage } from './imageGenerator'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -8,6 +9,9 @@ document.querySelector('#app').innerHTML = `
       <img src="${ntnuLogo}" class="logo" alt="NTNU logo" />
     </a>
     <h1>Welcome to Computer Graphics 2023!</h1>
+    <div class="card">
+      <canvas id="canvas" width='512' height='512'></canvas>
+    </div>
     <div class="card">
       <button id="counter" />
     </div>
@@ -18,3 +22,4 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+generateImage(document.querySelector('#canvas'))
